@@ -1,9 +1,12 @@
-# From Depth to Safe Depth
+<h1 align='center'>From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation</h1>
 
-**Uncertainty-aware monocular perception for mobile robot navigation**
+<br>
 
-Saeid Firouzi Daghigh, Saeed Ayat — Payame Noor University, Tehran, Iran
+<div align='center'>
+    <a href='https://arxiv.org/'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+</div>
 
+## Abstraction
 Off-the-shelf monocular depth from a foundation model (Depth Anything V2) makes a standard Nav2 stack collide in 63% of episodes, because nearby obstacles are systematically placed too far away. This repository adds a small plug-in head on the **frozen** depth model that predicts a per-pixel log-depth correction `μ` and uncertainty `σ`. Nav2 receives the conformally calibrated lower bound
 
 ```
