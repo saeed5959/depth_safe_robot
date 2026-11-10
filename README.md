@@ -59,7 +59,6 @@ depth_safe_robot/
 │       ├── collect_data.py          RGB + GT depth recorder for training
 │       ├── train_head.py            β-NLL training + conformal calibration of k and c
 │       └── analyze.py               tables, Wilson CIs, McNemar tests
-├── checkpoints/head_best.pt         trained head (with k and c stored inside) + calib.json
 ├── scripts/setup.sh                 one-time setup (DA2, checkpoint, assets, build)
 └── third_party/                     Depth-Anything-V2 (cloned by setup, git-ignored)
 ```
@@ -133,7 +132,7 @@ cd ../eval && ./gen_all.sh
 ```bash
 python3 train_head.py --data dataset --da_repo $DA --out runs/head_v1 --epochs 5
 ```
-The best head (by validation NLL) is saved with `k` and `c` inside `runs/head_v1/head_best.pt`; `calib.json` holds the calibration and sparsification curve. To use the published head instead, pass `head_ckpt:=~/depth_safe_robot/checkpoints/head_best.pt` to the launch file.
+The best head (by validation NLL) is saved with `k` and `c` inside `runs/head_v1/head_best.pt`; `calib.json` holds the calibration and sparsification curve.
 
 **4. Navigation evaluation** (120 episodes per method)
 ```bash
@@ -189,15 +188,3 @@ MIT for the code in this repository (see `LICENSE`). Third-party models and asse
 
 ---
 
-## Publishing (maintainer notes)
-
-```bash
-cd ~/depth_safe_robot
-git status                         # review: no dataset, logs, .pth, build folders
-git commit -m "Initial release: safe-depth module, worlds, evaluation and trained head"
-git branch -M main
-git remote add origin https://github.com/saeed5959/depth_safe_robot.git
-git push -u origin main
-```
-After `scripts/setup.sh` the Nav2 configs contain your absolute path; keep the placeholder in git with
-`git update-index --assume-unchanged mono_nav_worlds/*_nav2.yaml`.
