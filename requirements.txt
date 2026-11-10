@@ -1,0 +1,11 @@
+# Python packages used by the depth nodes, the evaluation scripts and the head training.
+# ROS 2 Humble packages (rclpy, cv_bridge, nav2_simple_commander, ...) come from apt, see README.
+# Install PyTorch for your CUDA version from https://pytorch.org first.
+torch>=2.1
+torchvision>=0.16
+numpy<2
+opencv-python
+scipy
+pyyaml
+matplotlib
+pillow

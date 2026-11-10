@@ -1,0 +1,767 @@
+world: train_02
+seed: 5146
+split: train
+spawn:
+  x: 0.7
+  y: 0.0
+  yaw: 0.0
+config:
+  plan_r: 0.3
+  start_clear: 0.45
+  narrow: 0.42
+  v_max: 0.3
+  pairs: 40
+  repeats: 1
+  near_frac: 0.3
+episodes:
+- id: train_02_p001_r0
+  kind: sampled
+  start:
+    x: 10.225
+    y: 2.225
+    yaw: 0.066
+  goal:
+    x: 12.875
+    y: 3.575
+  astar_len: 3.74
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 51.1
+  pair: p001
+  repeat: 0
+- id: train_02_p002_r0
+  kind: sampled
+  start:
+    x: 12.925
+    y: 3.225
+    yaw: -2.031
+  goal:
+    x: 14.225
+    y: -2.825
+  astar_len: 10.58
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 108.2
+  pair: p002
+  repeat: 0
+- id: train_02_p003_r0
+  kind: sampled
+  start:
+    x: 12.125
+    y: -2.075
+    yaw: 2.656
+  goal:
+    x: 9.725
+    y: 1.025
+  astar_len: 4.33
+  difficulty: hard
+  tags:
+  - blank
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 56.1
+  pair: p003
+  repeat: 0
+- id: train_02_p004_r0
+  kind: sampled
+  start:
+    x: 8.575
+    y: 1.775
+    yaw: -1.665
+  goal:
+    x: 9.575
+    y: -1.325
+  astar_len: 3.51
+  difficulty: hard
+  tags:
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 49.3
+  pair: p004
+  repeat: 0
+- id: train_02_p005_r0
+  kind: sampled
+  start:
+    x: 3.775
+    y: -0.225
+    yaw: -0.044
+  goal:
+    x: 9.825
+    y: -1.225
+  astar_len: 6.55
+  difficulty: hard
+  tags:
+  - blank
+  los: false
+  min_path_clearance: 0.3
+  t_max: 74.6
+  pair: p005
+  repeat: 0
+- id: train_02_p006_r0
+  kind: sampled
+  start:
+    x: 12.025
+    y: -3.375
+    yaw: -3.201
+  goal:
+    x: 8.525
+    y: -3.175
+  astar_len: 3.79
+  difficulty: hard
+  tags:
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 51.6
+  pair: p006
+  repeat: 0
+- id: train_02_p007_r0
+  kind: sampled
+  start:
+    x: 9.875
+    y: -0.975
+    yaw: 1.56
+  goal:
+    x: 13.425
+    y: 3.475
+  astar_len: 6.45
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 73.7
+  pair: p007
+  repeat: 0
+- id: train_02_p008_r0
+  kind: sampled
+  start:
+    x: 11.025
+    y: 3.475
+    yaw: -2.383
+  goal:
+    x: 5.925
+    y: 0.125
+  astar_len: 6.52
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 74.3
+  pair: p008
+  repeat: 0
+- id: train_02_p009_r0
+  kind: sampled
+  start:
+    x: 10.225
+    y: 1.175
+    yaw: 0.568
+  goal:
+    x: 13.125
+    y: 1.775
+  astar_len: 3.15
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 46.2
+  pair: p009
+  repeat: 0
+- id: train_02_p010_r0
+  kind: sampled
+  start:
+    x: 12.225
+    y: -2.275
+    yaw: 2.031
+  goal:
+    x: 13.575
+    y: 3.325
+  astar_len: 8.76
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 93.0
+  pair: p010
+  repeat: 0
+- id: train_02_p011_r0
+  kind: near_obstacle
+  start:
+    x: 6.625
+    y: -0.125
+    yaw: -0.566
+  goal:
+    x: 9.025
+    y: -1.575
+  astar_len: 3.03
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 45.2
+  pair: p011
+  repeat: 0
+- id: train_02_p012_r0
+  kind: sampled
+  start:
+    x: 12.675
+    y: 2.275
+    yaw: -2.535
+  goal:
+    x: 9.175
+    y: -0.425
+  astar_len: 4.94
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 61.2
+  pair: p012
+  repeat: 0
+- id: train_02_p013_r0
+  kind: near_obstacle
+  start:
+    x: 10.125
+    y: 1.025
+    yaw: -2.177
+  goal:
+    x: 9.325
+    y: -1.375
+  astar_len: 2.73
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: true
+  min_path_clearance: 0.316
+  t_max: 42.8
+  pair: p013
+  repeat: 0
+- id: train_02_p014_r0
+  kind: near_obstacle
+  start:
+    x: 11.425
+    y: 3.575
+    yaw: -2.336
+  goal:
+    x: 6.275
+    y: -0.525
+  astar_len: 6.88
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 77.3
+  pair: p014
+  repeat: 0
+- id: train_02_p015_r0
+  kind: near_obstacle
+  start:
+    x: 6.225
+    y: -0.325
+    yaw: 0.656
+  goal:
+    x: 9.175
+    y: 2.875
+  astar_len: 4.98
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 61.5
+  pair: p015
+  repeat: 0
+- id: train_02_p016_r0
+  kind: sampled
+  start:
+    x: 6.275
+    y: -0.225
+    yaw: -0.056
+  goal:
+    x: 10.625
+    y: -1.275
+  astar_len: 4.78
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 59.9
+  pair: p016
+  repeat: 0
+- id: train_02_p017_r0
+  kind: sampled
+  start:
+    x: 10.625
+    y: -2.725
+    yaw: 2.176
+  goal:
+    x: 0.425
+    y: -0.475
+  astar_len: 11.69
+  difficulty: hard
+  tags:
+  - blank
+  los: false
+  min_path_clearance: 0.3
+  t_max: 117.4
+  pair: p017
+  repeat: 0
+- id: train_02_p018_r0
+  kind: sampled
+  start:
+    x: 8.475
+    y: -2.225
+    yaw: -0.193
+  goal:
+    x: 14.375
+    y: -3.575
+  astar_len: 6.46
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 73.8
+  pair: p018
+  repeat: 0
+- id: train_02_p019_r0
+  kind: near_obstacle
+  start:
+    x: 13.175
+    y: -3.325
+    yaw: 2.242
+  goal:
+    x: 8.425
+    y: 0.875
+  astar_len: 6.87
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 77.3
+  pair: p019
+  repeat: 0
+- id: train_02_p020_r0
+  kind: near_obstacle
+  start:
+    x: 14.375
+    y: 1.575
+    yaw: 2.737
+  goal:
+    x: 9.025
+    y: 2.875
+  astar_len: 5.89
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: true
+  min_path_clearance: 0.3
+  t_max: 69.1
+  pair: p020
+  repeat: 0
+- id: train_02_p021_r0
+  kind: sampled
+  start:
+    x: 10.325
+    y: -1.275
+    yaw: 2.802
+  goal:
+    x: 0.475
+    y: 0.475
+  astar_len: 10.57
+  difficulty: hard
+  tags:
+  - blank
+  los: false
+  min_path_clearance: 0.3
+  t_max: 108.1
+  pair: p021
+  repeat: 0
+- id: train_02_p022_r0
+  kind: sampled
+  start:
+    x: 10.625
+    y: 2.525
+    yaw: -2.793
+  goal:
+    x: 12.325
+    y: -2.875
+  astar_len: 7.64
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 83.6
+  pair: p022
+  repeat: 0
+- id: train_02_p023_r0
+  kind: sampled
+  start:
+    x: 12.075
+    y: -3.425
+    yaw: 1.969
+  goal:
+    x: 11.425
+    y: 2.375
+  astar_len: 7.71
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 84.2
+  pair: p023
+  repeat: 0
+- id: train_02_p024_r0
+  kind: near_obstacle
+  start:
+    x: 14.025
+    y: -2.975
+    yaw: 2.307
+  goal:
+    x: 13.625
+    y: 2.975
+  astar_len: 10.75
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 109.6
+  pair: p024
+  repeat: 0
+- id: train_02_p025_r0
+  kind: sampled
+  start:
+    x: 8.575
+    y: 1.525
+    yaw: -1.636
+  goal:
+    x: 9.425
+    y: -1.125
+  astar_len: 3.0
+  difficulty: hard
+  tags:
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 45.0
+  pair: p025
+  repeat: 0
+- id: train_02_p026_r0
+  kind: sampled
+  start:
+    x: 8.125
+    y: 0.125
+    yaw: 0.824
+  goal:
+    x: 11.625
+    y: 2.225
+  astar_len: 4.63
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 58.6
+  pair: p026
+  repeat: 0
+- id: train_02_p027_r0
+  kind: sampled
+  start:
+    x: 11.675
+    y: -3.475
+    yaw: 2.04
+  goal:
+    x: 9.475
+    y: -1.125
+  astar_len: 3.29
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 47.4
+  pair: p027
+  repeat: 0
+- id: train_02_p028_r0
+  kind: near_obstacle
+  start:
+    x: 9.125
+    y: 2.775
+    yaw: -0.546
+  goal:
+    x: 11.925
+    y: 0.875
+  astar_len: 3.91
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 52.6
+  pair: p028
+  repeat: 0
+- id: train_02_p029_r0
+  kind: sampled
+  start:
+    x: 5.475
+    y: 0.375
+    yaw: 0.277
+  goal:
+    x: 9.725
+    y: 1.225
+  astar_len: 4.6
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.32
+  t_max: 58.4
+  pair: p029
+  repeat: 0
+- id: train_02_p030_r0
+  kind: sampled
+  start:
+    x: 13.525
+    y: -3.275
+    yaw: 2.471
+  goal:
+    x: 8.625
+    y: 1.225
+  astar_len: 7.14
+  difficulty: hard
+  tags:
+  - blank
+  los: false
+  min_path_clearance: 0.3
+  t_max: 79.5
+  pair: p030
+  repeat: 0
+- id: train_02_p031_r0
+  kind: sampled
+  start:
+    x: 14.475
+    y: -2.875
+    yaw: 2.051
+  goal:
+    x: 12.975
+    y: 2.525
+  astar_len: 10.32
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 106.0
+  pair: p031
+  repeat: 0
+- id: train_02_p032_r0
+  kind: sampled
+  start:
+    x: 13.825
+    y: -2.225
+    yaw: 2.616
+  goal:
+    x: 11.225
+    y: 2.625
+  astar_len: 8.59
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 91.6
+  pair: p032
+  repeat: 0
+- id: train_02_p033_r0
+  kind: near_obstacle
+  start:
+    x: 13.875
+    y: -3.125
+    yaw: 2.431
+  goal:
+    x: 14.475
+    y: 3.225
+  astar_len: 11.62
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 116.8
+  pair: p033
+  repeat: 0
+- id: train_02_p034_r0
+  kind: near_obstacle
+  start:
+    x: 10.375
+    y: -2.525
+    yaw: 2.234
+  goal:
+    x: 13.625
+    y: 2.925
+  astar_len: 7.95
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 86.2
+  pair: p034
+  repeat: 0
+- id: train_02_p035_r0
+  kind: sampled
+  start:
+    x: 5.575
+    y: 0.075
+    yaw: 0.474
+  goal:
+    x: 10.375
+    y: 2.575
+  astar_len: 5.86
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 68.9
+  pair: p035
+  repeat: 0
+- id: train_02_p036_r0
+  kind: sampled
+  start:
+    x: 11.175
+    y: 2.575
+    yaw: -1.021
+  goal:
+    x: 12.725
+    y: -2.725
+  astar_len: 7.67
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 83.9
+  pair: p036
+  repeat: 0
+- id: train_02_p037_r0
+  kind: sampled
+  start:
+    x: 1.475
+    y: -0.225
+    yaw: 0.342
+  goal:
+    x: 8.575
+    y: -0.875
+  astar_len: 7.45
+  difficulty: hard
+  tags:
+  - blank
+  los: false
+  min_path_clearance: 0.3
+  t_max: 82.1
+  pair: p037
+  repeat: 0
+- id: train_02_p038_r0
+  kind: sampled
+  start:
+    x: 13.025
+    y: -2.375
+    yaw: 2.596
+  goal:
+    x: 9.275
+    y: 2.325
+  astar_len: 6.84
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 77.0
+  pair: p038
+  repeat: 0
+- id: train_02_p039_r0
+  kind: near_obstacle
+  start:
+    x: 14.225
+    y: 1.875
+    yaw: -2.31
+  goal:
+    x: 10.475
+    y: -3.075
+  astar_len: 8.7
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  - narrow
+  los: false
+  min_path_clearance: 0.3
+  t_max: 92.5
+  pair: p039
+  repeat: 0
+- id: train_02_p040_r0
+  kind: sampled
+  start:
+    x: 6.275
+    y: -0.075
+    yaw: 0.386
+  goal:
+    x: 13.825
+    y: 1.825
+  astar_len: 8.34
+  difficulty: hard
+  tags:
+  - blank
+  - dark
+  los: false
+  min_path_clearance: 0.3
+  t_max: 89.5
+  pair: p040
+  repeat: 0

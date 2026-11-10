@@ -1,0 +1,35 @@
+<!--
+  Camera-friendly version of Humble's navigate_to_pose_w_replanning_and_recovery.xml
+  Changes vs the default:
+   - a FollowPath failure no longer wipes the local costmap (the robot kept forgetting
+     obstacles that had left the camera's field of view)
+   - recoveries are short: back up 0.15 m at 0.1 m/s, spin 0.8 rad (look around), wait 1 s
+     (default: back up at 0.05 m/s, spin 1.57 rad, wait 5 s)
+   - only a planner failure clears costmaps (useful when false obstacles block every path)
+-->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RecoveryNode number_of_retries="6" name="NavigateRecovery">
+      <PipelineSequence name="NavigateWithReplanning">
+        <RateController hz="1.0">
+          <RecoveryNode number_of_retries="1" name="ComputePathToPose">
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+            <ClearEntireCostmap name="ClearGlobalCostmap-Context" service_name="global_costmap/clear_entirely_global_costmap"/>
+          </RecoveryNode>
+        </RateController>
+        <RecoveryNode number_of_retries="1" name="FollowPath">
+          <FollowPath path="{path}" controller_id="FollowPath"/>
+          <Wait wait_duration="0.5"/>
+        </RecoveryNode>
+      </PipelineSequence>
+      <ReactiveFallback name="RecoveryFallback">
+        <GoalUpdated/>
+        <RoundRobin name="RecoveryActions">
+          <BackUp backup_dist="0.15" backup_speed="0.1"/>
+          <Spin spin_dist="0.8"/>
+          <Wait wait_duration="1"/>
+        </RoundRobin>
+      </ReactiveFallback>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

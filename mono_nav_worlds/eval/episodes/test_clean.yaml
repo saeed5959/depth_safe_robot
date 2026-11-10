@@ -1,0 +1,526 @@
+world: test_clean
+seed: 7406
+split: test
+spawn:
+  x: 0.7
+  y: 0.0
+  yaw: 0.0
+config:
+  plan_r: 0.3
+  start_clear: 0.45
+  narrow: 0.42
+  v_max: 0.3
+  pairs: 11
+  repeats: 2
+  near_frac: 0.0
+episodes:
+- id: test_clean_canon_corridor_end_r0
+  kind: canonical
+  start:
+    x: 0.7
+    y: 0.0
+    yaw: 0.0
+  goal:
+    x: 7.2
+    y: 0.0
+  astar_len: 6.55
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.4
+  t_max: 74.6
+  pair: canon_corridor_end
+  repeat: 0
+- id: test_clean_canon_corridor_end_r1
+  kind: canonical
+  start:
+    x: 0.608
+    y: 0.04
+    yaw: -0.129
+  goal:
+    x: 7.2
+    y: 0.0
+  astar_len: 6.55
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.4
+  t_max: 74.6
+  pair: canon_corridor_end
+  repeat: 1
+- id: test_clean_canon_hall_far_r0
+  kind: canonical
+  start:
+    x: 0.7
+    y: 0.0
+    yaw: 0.0
+  goal:
+    x: 14.0
+    y: 3.0
+  astar_len: 14.59
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 141.6
+  pair: canon_hall_far
+  repeat: 0
+- id: test_clean_canon_hall_far_r1
+  kind: canonical
+  start:
+    x: 0.735
+    y: -0.05
+    yaw: 0.079
+  goal:
+    x: 14.0
+    y: 3.0
+  astar_len: 14.59
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 141.6
+  pair: canon_hall_far
+  repeat: 1
+- id: test_clean_canon_hall_left_r0
+  kind: canonical
+  start:
+    x: 0.7
+    y: 0.0
+    yaw: 0.0
+  goal:
+    x: 10.5
+    y: 2.85
+  astar_len: 11.04
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 112.0
+  pair: canon_hall_left
+  repeat: 0
+- id: test_clean_canon_hall_left_r1
+  kind: canonical
+  start:
+    x: 0.753
+    y: 0.065
+    yaw: 0.129
+  goal:
+    x: 10.5
+    y: 2.85
+  astar_len: 11.04
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 112.0
+  pair: canon_hall_left
+  repeat: 1
+- id: test_clean_canon_hall_right_r0
+  kind: canonical
+  start:
+    x: 0.7
+    y: 0.0
+    yaw: 0.0
+  goal:
+    x: 13.0
+    y: -3.35
+  astar_len: 13.76
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 134.7
+  pair: canon_hall_right
+  repeat: 0
+- id: test_clean_canon_hall_right_r1
+  kind: canonical
+  start:
+    x: 0.714
+    y: -0.032
+    yaw: -0.154
+  goal:
+    x: 13.0
+    y: -3.35
+  astar_len: 13.76
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 134.7
+  pair: canon_hall_right
+  repeat: 1
+- id: test_clean_p001_r0
+  kind: sampled
+  start:
+    x: 2.575
+    y: -0.275
+    yaw: 0.342
+  goal:
+    x: 14.275
+    y: 2.275
+  astar_len: 12.76
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 126.3
+  pair: p001
+  repeat: 0
+- id: test_clean_p001_r1
+  kind: sampled
+  start:
+    x: 2.542
+    y: -0.193
+    yaw: 0.213
+  goal:
+    x: 14.275
+    y: 2.275
+  astar_len: 12.76
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 126.3
+  pair: p001
+  repeat: 1
+- id: test_clean_p002_r0
+  kind: sampled
+  start:
+    x: 7.125
+    y: -0.075
+    yaw: -0.018
+  goal:
+    x: 9.975
+    y: 0.175
+  astar_len: 2.95
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.5
+  t_max: 44.6
+  pair: p002
+  repeat: 0
+- id: test_clean_p002_r1
+  kind: sampled
+  start:
+    x: 7.047
+    y: -0.098
+    yaw: -0.137
+  goal:
+    x: 9.975
+    y: 0.175
+  astar_len: 2.95
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.5
+  t_max: 44.6
+  pair: p002
+  repeat: 1
+- id: test_clean_p003_r0
+  kind: sampled
+  start:
+    x: 9.325
+    y: -0.475
+    yaw: -0.613
+  goal:
+    x: 11.775
+    y: -1.175
+  astar_len: 2.74
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.75
+  t_max: 42.8
+  pair: p003
+  repeat: 0
+- id: test_clean_p003_r1
+  kind: sampled
+  start:
+    x: 9.286
+    y: -0.476
+    yaw: -0.485
+  goal:
+    x: 11.775
+    y: -1.175
+  astar_len: 2.74
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.75
+  t_max: 42.8
+  pair: p003
+  repeat: 1
+- id: test_clean_p004_r0
+  kind: sampled
+  start:
+    x: 7.575
+    y: -0.375
+    yaw: 0.296
+  goal:
+    x: 11.825
+    y: 0.225
+  astar_len: 4.62
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 58.5
+  pair: p004
+  repeat: 0
+- id: test_clean_p004_r1
+  kind: sampled
+  start:
+    x: 7.562
+    y: -0.355
+    yaw: 0.197
+  goal:
+    x: 11.825
+    y: 0.225
+  astar_len: 4.62
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 58.5
+  pair: p004
+  repeat: 1
+- id: test_clean_p005_r0
+  kind: sampled
+  start:
+    x: 8.775
+    y: 3.025
+    yaw: -1.28
+  goal:
+    x: 10.525
+    y: -1.925
+  astar_len: 5.67
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.8
+  t_max: 67.3
+  pair: p005
+  repeat: 0
+- id: test_clean_p005_r1
+  kind: sampled
+  start:
+    x: 8.701
+    y: 2.98
+    yaw: -1.407
+  goal:
+    x: 10.525
+    y: -1.925
+  astar_len: 5.67
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.8
+  t_max: 67.3
+  pair: p005
+  repeat: 1
+- id: test_clean_p006_r0
+  kind: sampled
+  start:
+    x: 11.925
+    y: -0.675
+    yaw: 1.47
+  goal:
+    x: 14.075
+    y: 3.425
+  astar_len: 5.22
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 63.5
+  pair: p006
+  repeat: 0
+- id: test_clean_p006_r1
+  kind: sampled
+  start:
+    x: 11.952
+    y: -0.723
+    yaw: 1.302
+  goal:
+    x: 14.075
+    y: 3.425
+  astar_len: 5.22
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 63.5
+  pair: p006
+  repeat: 1
+- id: test_clean_p007_r0
+  kind: sampled
+  start:
+    x: 9.475
+    y: -1.025
+    yaw: 1.028
+  goal:
+    x: 13.575
+    y: 3.525
+  astar_len: 6.25
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.316
+  t_max: 72.1
+  pair: p007
+  repeat: 0
+- id: test_clean_p007_r1
+  kind: sampled
+  start:
+    x: 9.388
+    y: -0.953
+    yaw: 1.109
+  goal:
+    x: 13.575
+    y: 3.525
+  astar_len: 6.25
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.316
+  t_max: 72.1
+  pair: p007
+  repeat: 1
+- id: test_clean_p008_r0
+  kind: sampled
+  start:
+    x: 1.175
+    y: -0.075
+    yaw: 0.057
+  goal:
+    x: 11.225
+    y: 1.625
+  astar_len: 11.11
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 112.5
+  pair: p008
+  repeat: 0
+- id: test_clean_p008_r1
+  kind: sampled
+  start:
+    x: 1.195
+    y: -0.133
+    yaw: 0.051
+  goal:
+    x: 11.225
+    y: 1.625
+  astar_len: 11.11
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 112.5
+  pair: p008
+  repeat: 1
+- id: test_clean_p009_r0
+  kind: sampled
+  start:
+    x: 3.575
+    y: -0.475
+    yaw: 0.43
+  goal:
+    x: 9.125
+    y: 2.625
+  astar_len: 7.42
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 81.8
+  pair: p009
+  repeat: 0
+- id: test_clean_p009_r1
+  kind: sampled
+  start:
+    x: 3.559
+    y: -0.455
+    yaw: 0.467
+  goal:
+    x: 9.125
+    y: 2.625
+  astar_len: 7.42
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 81.8
+  pair: p009
+  repeat: 1
+- id: test_clean_p010_r0
+  kind: sampled
+  start:
+    x: 11.425
+    y: -2.225
+    yaw: 1.23
+  goal:
+    x: 11.375
+    y: 1.175
+  astar_len: 3.59
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 49.9
+  pair: p010
+  repeat: 0
+- id: test_clean_p010_r1
+  kind: sampled
+  start:
+    x: 11.432
+    y: -2.183
+    yaw: 1.18
+  goal:
+    x: 11.375
+    y: 1.175
+  astar_len: 3.59
+  difficulty: medium
+  tags: []
+  los: false
+  min_path_clearance: 0.3
+  t_max: 49.9
+  pair: p010
+  repeat: 1
+- id: test_clean_p011_r0
+  kind: sampled
+  start:
+    x: 8.975
+    y: 2.525
+    yaw: -1.39
+  goal:
+    x: 11.675
+    y: -3.075
+  astar_len: 6.72
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.8
+  t_max: 76.0
+  pair: p011
+  repeat: 0
+- id: test_clean_p011_r1
+  kind: sampled
+  start:
+    x: 9.009
+    y: 2.487
+    yaw: -1.302
+  goal:
+    x: 11.675
+    y: -3.075
+  astar_len: 6.72
+  difficulty: easy
+  tags: []
+  los: true
+  min_path_clearance: 0.8
+  t_max: 76.0
+  pair: p011
+  repeat: 1

@@ -1,0 +1,40 @@
+world: train_04
+seed: 4
+hard_cases:
+- blank
+- dark
+- glass
+blank_corridor_span_x:
+- 3.15
+- 5.21
+dark_side_of_hall: +y
+start:
+  x: 0.7
+  y: 0.0
+  yaw: 0.0
+goals_world:
+  corridor_end:
+  - 7.2
+  - 0.0
+  hall_far:
+  - 14.25
+  - 2.75
+  hall_left:
+  - 12.5
+  - 3.35
+  hall_right:
+  - 10.0
+  - -3.1
+goals_odom:
+  corridor_end:
+  - 6.5
+  - 0.0
+  hall_far:
+  - 13.55
+  - 2.75
+  hall_left:
+  - 11.8
+  - 3.35
+  hall_right:
+  - 9.3
+  - -3.1

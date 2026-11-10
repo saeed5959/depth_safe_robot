@@ -1,0 +1,35 @@
+world: test_clean
+seed: 101
+hard_cases: []
+blank_corridor_span_x: null
+dark_side_of_hall: null
+start:
+  x: 0.7
+  y: 0.0
+  yaw: 0.0
+goals_world:
+  corridor_end:
+  - 7.2
+  - 0.0
+  hall_far:
+  - 14.0
+  - 3.0
+  hall_left:
+  - 10.5
+  - 2.85
+  hall_right:
+  - 13.0
+  - -3.35
+goals_odom:
+  corridor_end:
+  - 6.5
+  - 0.0
+  hall_far:
+  - 13.3
+  - 3.0
+  hall_left:
+  - 9.8
+  - 2.85
+  hall_right:
+  - 12.3
+  - -3.35
