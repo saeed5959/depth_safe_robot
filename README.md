@@ -3,7 +3,7 @@
 <br>
 
 <div align='center'>
-    <a href='https://arxiv.org/'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://arxiv.org/abs/2611.13769'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
 
 ## Abstraction
